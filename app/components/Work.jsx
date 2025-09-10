@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { assets, workList } from "@/assets/assets";
+import Link from "next/link";
 
 const Work = () => {
   return (
@@ -12,7 +13,7 @@ const Work = () => {
       </p>
 
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center max-w-5xl mx-auto">
-        {workList.map(({ img, title, description, github }, index) => (
+        {workList.map(({ img, title, description, github_link }, index) => (
           <li
             key={index}
             className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transform transition-all duration-300 max-w-sm mx-auto"
@@ -41,14 +42,19 @@ const Work = () => {
                 {description}
               </p>
 
-              <a
-                href={github}
+              <Link
+                href={github_link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-sm font-medium text-white bg-black px-3 py-1.5 rounded-lg hover:bg-gray-800 transition-colors"
+                className="inline-block text-sm font-medium text-white bg-black px-3 py-1.5 rounded-lg hover:bg-gray-800 transition-colors cursor-pointer"
               >
-                View on Github
-              </a>
+                View on Github{" "}
+                <Image
+                  src={assets.right_arrow_white}
+                  alt="Arrow Icon"
+                  className="w-3 inline-block ml-1"
+                />
+              </Link>
             </div>
           </li>
         ))}

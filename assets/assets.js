@@ -84,7 +84,8 @@ export const infoList = [
   {
     icon: assets.edu_icon,
     title: "Education",
-    description: "Bachelor of Computer Application in Everest College",
+    description:
+      "Bachelor of Computer Application in Everest College (Currently in 7th SEM)",
   },
   {
     icon: assets.project_icon,

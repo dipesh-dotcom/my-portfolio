@@ -7,7 +7,7 @@ const TechStack = () => {
     <div className="w-full px-[12%] py-10 scroll-mt-20" id="techstack">
       <h2 className="text-center text-5xl font-ovo">Tech Stack</h2>
       <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo">
-        I am a focused developer from Kathmandu, with a knowledge multiple
+        I am a focused developer from Dolakha, with a knowledge multiple
         technologies like Python , React, Postgresql and MySQL.
       </p>
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
