@@ -28,7 +28,7 @@ const Navbar = () => {
           isScroll ? "bg-white bg-opacity-50  backdrop-blur-lg shadow-sm" : ""
         }`}
       >
-        <Link href="#top">
+        <Link href="#home">
           <Image
             src={assets.logo}
             alt=""
@@ -42,7 +42,7 @@ const Navbar = () => {
           } `}
         >
           <li>
-            <Link className="font-ovo" href="#top">
+            <Link className="font-ovo" href="#home">
               Home
             </Link>
           </li>
@@ -95,7 +95,7 @@ const Navbar = () => {
             />
           </div>
           <li>
-            <Link onClick={closeMenu} className="font-ovo" href="#top">
+            <Link onClick={closeMenu} className="font-ovo" href="#home">
               Home
             </Link>
           </li>
