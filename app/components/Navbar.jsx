@@ -52,8 +52,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link className="font-ovo" href="#services">
-              Services
+            <Link className="font-ovo" href="#techstack">
+              Skills
             </Link>
           </li>
           <li>
@@ -105,8 +105,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link onClick={closeMenu} className="font-ovo" href="#services">
-              Services
+            <Link onClick={closeMenu} className="font-ovo" href="#techstack ">
+              Skills
             </Link>
           </li>
           <li>
